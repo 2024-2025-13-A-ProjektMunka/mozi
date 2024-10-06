@@ -1,0 +1,15 @@
+nav {
+    background-color: blue;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    color: whitesmoke;
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+}
