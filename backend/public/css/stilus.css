@@ -13,3 +13,7 @@ nav li a {
     padding: 1em;
     text-decoration: none;
 }
+
+img {
+    width: 350px;
+}
