@@ -51,3 +51,18 @@
         ![Tizenharmadik kép](/markdown/images/kep_013.png)
 -   [ ] Kezdeti stílusolás a `stilus.css` állományban
         ![Tizennegyedik kép](/markdown/images/kep_014.png)
+-   [ ] Futtatás eredménye
+        ![Tizenötödik kép](/markdown/images/kep_015.png)
+
+## Negyedik lépés
+
+-   [ ] Készítsük el a **filmek**, **nezok** és **foglalasok** route-okat is. Példaként a **filmek** route-ot vesszük végig. Készítsünk egy `filmekRouteControllers.js` állományt a `controllers` mappában <br> `mozi/backend/controllers > touch filmekRouteControllers.js`
+        ![Tizenhatodik kép](/markdown/images/kep_016.png)
+-   [ ] Ezután készítsünk egy `filmekRoutes.js` állományt a `routes` mappában <br> `mozi/backend/controllers > cd ..` <br> `mozi/backend > cd routes` <br> `mozi/backend/routes > touch filmekRoutes.js`
+        ![Tizenhetedik kép](/markdown/images/kep_017.png)
+-   [ ] Már csak a `server.js` van hátra
+        ![Tizennyolcadik kép](/markdown/images/kep_018.png)
+-   [ ] És a `filmek.ejs` a `views` mappában <br> `mozi/backend/routes > cd ..` <br> `mozi/backend > cd views` <br> `mozi/backend/views > touch filmek.ejs`
+        ![Tizenkilencedik kép](/markdown/images/kep_019.png)
+-   [ ] Futtatás után
+        ![Huszadik kép](/markdown/images/kep_020.png)

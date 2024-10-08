@@ -15,7 +15,7 @@ mongoDbConnection()
         console.log('Sikeres adatbázis csatlakozás!');
 
         app.listen(PORT, () => {
-            console.log(`http://localhost:${PORT}`);
+            console.log(`http://localhost:${PORT}/api/mozi`);
         });
     })
     .catch((error) => {
@@ -23,3 +23,6 @@ mongoDbConnection()
     });
 
 app.use('/api/mozi', require('./routes/mainRoutes'));
+app.use('/api/mozi/filmek', require('./routes/filmekRoutes'));
+app.use('/api/mozi/nezok', require('./routes/nezokRoutes'));
+app.use('/api/mozi/foglalasok', require('./routes/foglalasokRoutes'));
