@@ -16,4 +16,11 @@ feldolgoz.addEventListener("click", async (event) => {
     },
     body: JSON.stringify({ cim, hossz, plakat, idopontok, arkategoria }),
   });
+
+  const valasz = await response.json();
+
+  if (response.ok) {
+    window.alert(valasz.msg);
+    window.location.replace("/api/mozi/filmek");
+  }
 });

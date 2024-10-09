@@ -11,10 +11,22 @@ exports.getUjFilm = (req, res) => {
 };
 
 exports.postUjFilm = async (req, res) => {
-  const parameterek = req.body;
-  console.log(parameterek);
+  const { cim, hossz, plakat, idopontok, arkategoria } = req.body;
+  const idopontTomb = idopontok.split("\n");
+  const arkategoriaTomb = arkategoria.split("\n");
+
   // const film = await Film.findById(parameterek.id);
   try {
+    const newFilm = new Film({
+      cim,
+      hossz,
+      plakat,
+      idopontok: idopontTomb,
+      arkategoria: arkategoriaTomb,
+    });
+    console.log(newFilm);
+    await newFilm.save();
+
     res.status(200).json({ msg: "Sikeres film felvétel!" });
   } catch (error) {
     res.status(500).json({ msg: error });
