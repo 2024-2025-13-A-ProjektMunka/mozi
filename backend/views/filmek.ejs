@@ -25,28 +25,50 @@
     </head>
     <body>
         <%- include('./nav.ejs') %>
-        <h1>Filmek</h1>
         <div class="container">
+            <h1>Filmek</h1>
             <div class="row">
                 <% for( let j = 0; j < filmek.length; j++ ) { %>
-                    <div class="col-sm-12 col-lg-6 col-xl-4">
-                        <h3><%= filmek[j].cim %></h3>
-                        <img src="<%= filmek[j].plakat %>" alt="thor" />
-                        <p>A film hossza: <%= filmek[j].hossz %> perc</p>
-                        <label for="idopontok">Időpontok:</label>
-                        <select name="idopontok" id="idopontok">
-                            <% for( let i = 0; i < filmek[j].idopontok.length; i++ ) { %>
-                                <option value="<%= filmek[j].idopontok[i] %>"><%= filmek[j].idopontok[i] %></option>
-                            <% } %>
-                          </select>
-                          <div class="arkategoria">
-                              <p>Árkategória: </p>
-                              <label for="also"><%= filmek[j].arkategoria[0] %> Ft: </label>
-                              <input type="radio" name="arkat" id="also">  <br>
-                              <label for="felso"><%= filmek[j].arkategoria[1] %> Ft: </label>
-                              <input type="radio" name="arkat" id="felso">  
-                          </div>
+                <div class="col-sm-12 col-lg-6 col-xl-4">
+                    <h3><%= filmek[j].cim %></h3>
+                    <img
+                        src="<%= filmek[j].plakat %>"
+                        alt="thor"
+                    />
+                    <p>A film hossza: <%= filmek[j].hossz %> perc</p>
+                    <label for="idopontok">Időpontok:</label>
+                    <select
+                        name="idopontok"
+                        id="idopontok"
+                    >
+                        <% for( let i = 0; i < filmek[j].idopontok.length; i++ )
+                        { %>
+                        <option value="<%= filmek[j].idopontok[i] %>">
+                            <%= filmek[j].idopontok[i] %>
+                        </option>
+                        <% } %>
+                    </select>
+                    <div class="arkategoria">
+                        <p>Árkategória:</p>
+                        <label for="also"
+                            ><%= filmek[j].arkategoria[0] %> Ft:
+                        </label>
+                        <input
+                            type="radio"
+                            name="arkat"
+                            id="also"
+                        />
+                        <br />
+                        <label for="felso"
+                            ><%= filmek[j].arkategoria[1] %> Ft:
+                        </label>
+                        <input
+                            type="radio"
+                            name="arkat"
+                            id="felso"
+                        />
                     </div>
+                </div>
                 <% } %>
             </div>
         </div>

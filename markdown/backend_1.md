@@ -2,7 +2,7 @@
 
 [Főoldal](/markdown/megoldas.md)
 
-## Első lépés
+## Első lépés - server.js és .env kezdeti beállítása
 
 -   [ ] Lépjünk be a **backend** mappába <br> `mozi > cd backend`
 -   [ ] Hozzuk létre a következő mappákat <br> `mozi/backend > mkdir models views controllers routes public middlewares`
@@ -20,7 +20,7 @@
     -   **MONGO_URI** -beállítása
         ![Harmadik kép](/markdown/images/kep_003.png)
 
-## Második lépés
+## Második lépés - Adatbázis csatlakozás
 
 -   [ ] Lépjünk be a `middlewares` mappába <br> `mozi/backend > cd middlewares`
 -   [ ] Hozzunk létre egy `dbConnection.js` nevű állományt <br> `mozi/backend/middlewares > touch dbConnection.js`
@@ -34,7 +34,7 @@
 -   [ ] Bal `ctrl` + bal egérgomb klikk a `http://localhost:3500`-on hatására
         ![Hetedik kép](/markdown/images/kep_007.png)
 
-## Harmadik lépés
+## Harmadik lépés - MainRoute kezelése
 
 -   [ ] Lépjünk be a `backend/controllers` mappába és hozzuk létre a `mainRouteControllers.js` állományt <br> `mozi > cd backend/controllers` <br> `mozi/backend/controllers > touch mainRouteControllers.js`
 -   [ ] Szerkesszük az állományt
@@ -54,7 +54,7 @@
 -   [ ] Futtatás eredménye
         ![Tizenötödik kép](/markdown/images/kep_015.png)
 
-## Negyedik lépés
+## Negyedik lépés - FilmRoute kezelése
 
 -   [ ] Készítsük el a **filmek**, **nezok** és **foglalasok** route-okat is. Példaként a **filmek** route-ot vesszük végig. Készítsünk egy `filmekRouteControllers.js` állományt a `controllers` mappában <br> `mozi/backend/controllers > touch filmekRouteControllers.js`
         ![Tizenhatodik kép](/markdown/images/kep_016.png)
@@ -66,3 +66,9 @@
         ![Tizenkilencedik kép](/markdown/images/kep_019.png)
 -   [ ] Futtatás után
         ![Huszadik kép](/markdown/images/kep_020.png)
+
+## Ötödik lépés - Film modell létrehozása és használata
+
+-   [ ] Lépjünk be a `models` mappába <br> `mozi/backend/views > cd ..` <br> `mozi/backend > cd models` <br> `mozi/backend/views > touch Film.js`
+-   [ ] Szerkesszük az állományt
+        ![Huszonegyedik kép](/markdown/images/kep_021.png)

@@ -1,6 +1,6 @@
 # Mozi - projektfeladat
 
-## Első lépés
+## Első lépés - Feladat megbeszélése
 
 -   [ ] Ötletelés - Mi legyen a projekt témája?
 -   [ ] Csapatmunka megszervezése, feladatok kiosztása
@@ -12,7 +12,7 @@
 -   [ ] Előzetes tervek készítése - **Figma**
 -   [ ] Programozói eszközök kiválasztása - **MERN**
 
-## Második lépés
+## Második lépés - Projekt kezdeti beállításai
 
 -   [ ] **GitHub repository** létrehozása **mozi** néven
 -   [ ] **Visual Studio Code**-ban projekt indítása a repository URL-jével
@@ -22,7 +22,7 @@
 -   [ ] `frontend` mappa létrehozása: `mozi > npm create vite@latest`
 -   [ ] `.gitignore` állomány létrehozása a létrejött "mozi" mappában: `mozi > touch .gitignore`
 
-## Harmadik lépés
+## Harmadik lépés - MongoDb adatbázis beállítása
 
 -   [ ] **MongoDb** projekt létrehozása **mozi** néven
 -   [ ] **MongoDb** cluster létrehozása **mozimusor** néven
@@ -30,7 +30,7 @@
 -   [ ] **MongoDb** gyűjtemény (**collection**) létrehozása **films** néven az adatbázisban
 -   [ ] Csatlakozási link kiolvasása az oldalról
 
-## Negyedik lépés
+## Negyedik lépés - Node.js környezet kialakítása
 
 -   [ ] `backend`-hez szükséges **npm** csomagok első telepítése: `mozi > npm install express ejs mongoose dotenv cors`
 -   [ ] Fejlesztői függőség (**devDependency**) telepítése: `mozi > npm install -D nodemon`
@@ -39,6 +39,6 @@
 -   [ ] `package.json` első szerkesztése:
         ![Második kép](/markdown/images/kep_002.png)
 
-## Ötödik lépés
+## Ötödik lépés - Irány a backend
 
 -   [ ] [Backend oldalon kezdeti beállítások](/markdown/backend_1.md)
